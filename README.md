@@ -17,6 +17,15 @@ $ pip install -U jzp
 ```
 
 
+## Usage
+
+Once installed, the `jzp` command will be available. An example usge for file extracting can be:
+
+```bash
+$ jzp -xf ./sys5462x.jzp
+```
+
+
 ## Links
 
 -   PyPI Releases: https://pypi.org/project/jzp/
