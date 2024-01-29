@@ -1,4 +1,4 @@
-# liblzss
+# JZP
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/antoniovazquezblanco/jzp/test.yml)
 ![PyPI](https://img.shields.io/pypi/v/jzp)
