@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
 [project]
 name = "jzp"
 description = "A libary for dealing with the compression and decompression of Agilent JZP files."
@@ -24,9 +28,8 @@ dynamic = ["version"]
 [project.scripts]
 jzp = "jzp.cli:main"
 
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+[tool.hatch.build.targets.wheel]
+packages = ["src/jzp"]
 
-[tool.setuptools.dynamic]
-version = {attr = "jzp.__version__"}
+[tool.hatch.version]
+source = "vcs"

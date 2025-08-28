@@ -22,10 +22,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip 
-          pip install build
+          pip install hatch
 
       - name: Build
-        run: python -m build --sdist --wheel
+        run: hatch build
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
